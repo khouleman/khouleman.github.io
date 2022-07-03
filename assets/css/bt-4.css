@@ -290,3 +290,538 @@
   font-weight: 700;
   text-transform: uppercase
 }
+
+.timeline {
+  position: relative;
+  overflow: hidden;
+  padding-left: 1px
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 1px;
+  top: 0;
+  bottom: 0;
+  border-right: 2px solid rgba(0, 0, 0, .2)
+}
+
+.timeline:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  left: 0;
+  top: 100%;
+  margin-top: -4px;
+  background-color: #000
+}
+
+.timeline-animated:before {
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top
+}
+
+.timeline-animated:after {
+  top: 0
+}
+
+.timeline-animated .timeline-item {
+  -webkit-transform: translate(-100%);
+  -ms-transform: translate(-100%);
+  transform: translate(-100%)
+}
+
+.timeline-animated .timeline-item:before {
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top
+}
+
+.interaction-in.timeline-animated:before,
+.interaction-in .timeline-animated:before {
+  -webkit-animation: timeline-border .35s cubic-bezier(.75, 0, .45, 1.1) .2s forwards;
+  animation: timeline-border .35s cubic-bezier(.75, 0, .45, 1.1) .2s forwards
+}
+
+.interaction-in.timeline-animated:after,
+.interaction-in .timeline-animated:after {
+  -webkit-animation: timeline-dot .35s cubic-bezier(.75, 0, .45, 1.1) .2s forwards;
+  animation: timeline-dot .35s cubic-bezier(.75, 0, .45, 1.1) .2s forwards
+}
+
+.interaction-in .timeline-item {
+  -webkit-animation: timeline-item .65s cubic-bezier(.75, 0, .45, 1.1) forwards;
+  animation: timeline-item .65s cubic-bezier(.75, 0, .45, 1.1) forwards
+}
+
+.interaction-in .timeline-item:before {
+  -webkit-animation: timeline-border .35s cubic-bezier(.75, 0, .45, 1.1) forwards;
+  animation: timeline-border .35s cubic-bezier(.75, 0, .45, 1.1) forwards
+}
+
+.interaction-in .timeline-item:nth-child(1n) {
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s
+}
+
+.interaction-in .timeline-item:nth-child(1n):before {
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s
+}
+
+.interaction-in .timeline-item:nth-child(2n) {
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s
+}
+
+.interaction-in .timeline-item:nth-child(2n):before {
+  -webkit-animation-delay: .85s;
+  animation-delay: .85s
+}
+
+.interaction-in .timeline-item:nth-child(3n) {
+  -webkit-animation-delay: .45s;
+  animation-delay: .45s
+}
+
+.interaction-in .timeline-item:nth-child(3n):before {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s
+}
+
+.interaction-in .timeline-item:nth-child(4n) {
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s
+}
+
+.interaction-in .timeline-item:nth-child(4n):before {
+  -webkit-animation-delay: 1.15s;
+  animation-delay: 1.15s
+}
+
+.interaction-in .timeline-item:nth-child(5n) {
+  -webkit-animation-delay: .75s;
+  animation-delay: .75s
+}
+
+.interaction-in .timeline-item:nth-child(5n):before {
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s
+}
+
+.interaction-in .timeline-item:nth-child(6n) {
+  -webkit-animation-delay: .9s;
+  animation-delay: .9s
+}
+
+.interaction-in .timeline-item:nth-child(6n):before {
+  -webkit-animation-delay: 1.45s;
+  animation-delay: 1.45s
+}
+
+.interaction-in .timeline-item:nth-child(7n) {
+  -webkit-animation-delay: 1.05s;
+  animation-delay: 1.05s
+}
+
+.interaction-in .timeline-item:nth-child(7n):before {
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s
+}
+
+.interaction-in .timeline-item:nth-child(8n) {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s
+}
+
+.interaction-in .timeline-item:nth-child(8n):before {
+  -webkit-animation-delay: 1.75s;
+  animation-delay: 1.75s
+}
+
+.interaction-in .timeline-item:nth-child(9n) {
+  -webkit-animation-delay: 1.35s;
+  animation-delay: 1.35s
+}
+
+.interaction-in .timeline-item:nth-child(9n):before {
+  -webkit-animation-delay: 1.9s;
+  animation-delay: 1.9s
+}
+
+.interaction-in .timeline-item:nth-child(10n) {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s
+}
+
+.interaction-in .timeline-item:nth-child(10n):before {
+  -webkit-animation-delay: 2.05s;
+  animation-delay: 2.05s
+}
+
+.interaction-in .timeline-item:nth-child(11n) {
+  -webkit-animation-delay: 1.65s;
+  animation-delay: 1.65s
+}
+
+.interaction-in .timeline-item:nth-child(11n):before {
+  -webkit-animation-delay: 2.2s;
+  animation-delay: 2.2s
+}
+
+.interaction-in .timeline-item:nth-child(12n) {
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s
+}
+
+.interaction-in .timeline-item:nth-child(12n):before {
+  -webkit-animation-delay: 2.35s;
+  animation-delay: 2.35s
+}
+
+.interaction-in .timeline-item:nth-child(13n) {
+  -webkit-animation-delay: 1.95s;
+  animation-delay: 1.95s
+}
+
+.interaction-in .timeline-item:nth-child(13n):before {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s
+}
+
+.interaction-in .timeline-item:nth-child(14n) {
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s
+}
+
+.interaction-in .timeline-item:nth-child(14n):before {
+  -webkit-animation-delay: 2.65s;
+  animation-delay: 2.65s
+}
+
+.interaction-in .timeline-item:nth-child(15n) {
+  -webkit-animation-delay: 2.25s;
+  animation-delay: 2.25s
+}
+
+.interaction-in .timeline-item:nth-child(15n):before {
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 5rem
+}
+
+.timeline-item:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-right: 2px solid #000
+}
+
+.timeline-title {
+  font-size: 31.5px;
+  font-size: 2.25rem;
+  margin-bottom: .5rem
+}
+
+.timeline-text {
+  margin-bottom: 0
+}
+
+.timeline-date {
+  display: block;
+  margin-bottom: 1rem;
+  color: rgba(0, 0, 0, .6);
+  font-size: 12.25px;
+  font-size: .875rem
+}
+
+@-webkit-keyframes timeline-border {
+  0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0)
+  }
+  to {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1)
+  }
+}
+
+@keyframes timeline-border {
+  0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0)
+  }
+  to {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1)
+  }
+}
+
+@-webkit-keyframes timeline-dot {
+  0% {
+    top: 0
+  }
+  to {
+    top: 100%
+  }
+}
+
+@keyframes timeline-dot {
+  0% {
+    top: 0
+  }
+  to {
+    top: 100%
+  }
+}
+
+@-webkit-keyframes timeline-item {
+  0% {
+    -webkit-transform: translate(-100%);
+    transform: translate(-100%)
+  }
+  to {
+    -webkit-transform: translate(0);
+    transform: translate(0)
+  }
+}
+
+@keyframes timeline-item {
+  0% {
+    -webkit-transform: translate(-100%);
+    transform: translate(-100%)
+  }
+  to {
+    -webkit-transform: translate(0);
+    transform: translate(0)
+  }
+}
+
+.animation {
+  overflow: hidden
+}
+
+.interaction-in .animation-item-1 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s
+}
+
+.interaction-in.animation-translate-overline:after,
+.interaction-in .animation-translate-overline:after {
+  -webkit-animation: animation-translate-overline .15s cubic-bezier(.75, 0, .45, 1.1) forwards;
+  animation: animation-translate-overline .15s cubic-bezier(.75, 0, .45, 1.1) forwards
+}
+
+@-webkit-keyframes animation-translate-overline {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0)
+  }
+  to {
+    -webkit-transform: translate(-100%);
+    transform: translate(-100%)
+  }
+}
+
+@keyframes animation-translate-overline {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0)
+  }
+  to {
+    -webkit-transform: translate(-100%);
+    transform: translate(-100%)
+  }
+}
+
+.interaction-in .timeline-item {
+  -webkit-animation: timeline-item .65s cubic-bezier(.75, 0, .45, 1.1) forwards;
+  animation: timeline-item .65s cubic-bezier(.75, 0, .45, 1.1) forwards
+}
+
+.interaction-in .timeline-item:before {
+  -webkit-animation: timeline-border .35s cubic-bezier(.75, 0, .45, 1.1) forwards;
+  animation: timeline-border .35s cubic-bezier(.75, 0, .45, 1.1) forwards
+}
+
+.interaction-in .timeline-item:nth-child(1n) {
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s
+}
+
+.interaction-in .timeline-item:nth-child(1n):before {
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s
+}
+
+.interaction-in .timeline-item:nth-child(2n) {
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s
+}
+
+.interaction-in .timeline-item:nth-child(2n):before {
+  -webkit-animation-delay: .85s;
+  animation-delay: .85s
+}
+
+.interaction-in .timeline-item:nth-child(3n) {
+  -webkit-animation-delay: .45s;
+  animation-delay: .45s
+}
+
+.interaction-in .timeline-item:nth-child(3n):before {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s
+}
+
+.interaction-in .timeline-item:nth-child(4n) {
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s
+}
+
+.interaction-in .timeline-item:nth-child(4n):before {
+  -webkit-animation-delay: 1.15s;
+  animation-delay: 1.15s
+}
+
+.interaction-in .timeline-item:nth-child(5n) {
+  -webkit-animation-delay: .75s;
+  animation-delay: .75s
+}
+
+.interaction-in .timeline-item:nth-child(5n):before {
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s
+}
+
+.interaction-in .timeline-item:nth-child(6n) {
+  -webkit-animation-delay: .9s;
+  animation-delay: .9s
+}
+
+.interaction-in .timeline-item:nth-child(6n):before {
+  -webkit-animation-delay: 1.45s;
+  animation-delay: 1.45s
+}
+
+.interaction-in .timeline-item:nth-child(7n) {
+  -webkit-animation-delay: 1.05s;
+  animation-delay: 1.05s
+}
+
+.interaction-in .timeline-item:nth-child(7n):before {
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s
+}
+
+.interaction-in .timeline-item:nth-child(8n) {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s
+}
+
+.interaction-in .timeline-item:nth-child(8n):before {
+  -webkit-animation-delay: 1.75s;
+  animation-delay: 1.75s
+}
+
+.interaction-in .timeline-item:nth-child(9n) {
+  -webkit-animation-delay: 1.35s;
+  animation-delay: 1.35s
+}
+
+.interaction-in .timeline-item:nth-child(9n):before {
+  -webkit-animation-delay: 1.9s;
+  animation-delay: 1.9s
+}
+
+.interaction-in .timeline-item:nth-child(10n) {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s
+}
+
+.interaction-in .timeline-item:nth-child(10n):before {
+  -webkit-animation-delay: 2.05s;
+  animation-delay: 2.05s
+}
+
+.interaction-in .timeline-item:nth-child(11n) {
+  -webkit-animation-delay: 1.65s;
+  animation-delay: 1.65s
+}
+
+.interaction-in .timeline-item:nth-child(11n):before {
+  -webkit-animation-delay: 2.2s;
+  animation-delay: 2.2s
+}
+
+.interaction-in .timeline-item:nth-child(12n) {
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s
+}
+
+.interaction-in .timeline-item:nth-child(12n):before {
+  -webkit-animation-delay: 2.35s;
+  animation-delay: 2.35s
+}
+
+.interaction-in .timeline-item:nth-child(13n) {
+  -webkit-animation-delay: 1.95s;
+  animation-delay: 1.95s
+}
+
+.interaction-in .timeline-item:nth-child(13n):before {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s
+}
+
+.interaction-in .timeline-item:nth-child(14n) {
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s
+}
+
+.interaction-in .timeline-item:nth-child(14n):before {
+  -webkit-animation-delay: 2.65s;
+  animation-delay: 2.65s
+}
+
+.interaction-in .timeline-item:nth-child(15n) {
+  -webkit-animation-delay: 2.25s;
+  animation-delay: 2.25s
+}
+
+.interaction-in .timeline-item:nth-child(15n):before {
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s
+}
+
+.timeline-animated .timeline-item {
+  -webkit-transform: translate(-100%);
+  -ms-transform: translate(-100%);
+  transform: translate(-100%)
+}
+
+.timeline-animated .timeline-item:before {
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top
+}
