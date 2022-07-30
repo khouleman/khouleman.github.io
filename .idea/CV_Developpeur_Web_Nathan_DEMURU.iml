@@ -6,5 +6,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="analytics" level="application" />
     <orderEntry type="library" name="analytics" level="application" />
+    <orderEntry type="library" name="animate" level="application" />
   </component>
 </module>

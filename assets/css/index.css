@@ -1,14 +1,10 @@
-.with-header {
-  padding-top: 5rem;
-}
-
 .position-relative {
   position: relative !important;
 }
 
 body {
   margin: 0;
-  font-family: Montserrat, -apple-system, blinkmacsystemfont, segoe ui, roboto, helvetica neue, arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+  font-family: Montserrat, -apple-system, blinkmacsystemfont, segoe ui, roboto, helvetica neue, arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji !important;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -94,8 +90,8 @@ a {
   display: block;
   position: relative;
   padding-left: 2rem;
-  padding-top: .375rem;
-  padding-bottom: .375rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   font-size: 1.25rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -104,7 +100,7 @@ a {
 .nav-section {
   display: block;
   color: #000000;
-  letter-spacing: 0.5px;
+  letter-spacing: .5px;
   text-decoration: none;
 }
 
@@ -176,10 +172,6 @@ a {
   text-transform: uppercase;
 }
 
-.article {
-  font-size: 1.5rem;
-}
-
 .card-counter {
   margin-bottom: 2rem;
   line-height: 1;
@@ -192,7 +184,6 @@ a {
 .card {
   position: relative;
   display: flex;
-  flex-direction: tools;
   min-width: 0;
   word-wrap: break-word;
   background-color: rgba(0, 0, 0, 0);
@@ -531,6 +522,27 @@ figure:hover + span {
   100% {
     opacity: 1;
   }
+}
+
+.text-subject {
+  font-size: 1.2rem;
+}
+
+.projects-content {
+  padding: 1rem 1rem;
+  background: #ffdb67;
+}
+
+.card {
+  border: unset !important;
+}
+
+.card-img-top {
+  height: 280px;
+}
+
+.mb-10 {
+  margin-bottom: 5rem
 }
 
 
