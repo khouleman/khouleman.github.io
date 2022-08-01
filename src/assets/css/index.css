@@ -545,5 +545,56 @@ figure:hover + span {
   margin-bottom: 5rem
 }
 
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #ffdb67 inset !important;
+}
+
+.btn-primary {
+  color: #000 !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: 2px solid #000 !important;
+}
+
+.btn {
+  text-transform: uppercase !important;
+  display: inline-block !important;
+  font-weight: 700 !important;
+  color: #000;
+  text-align: center;
+  vertical-align: middle !important;
+  cursor: pointer !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  padding: 0.75rem 3rem !important;
+  font-size: .875rem !important;
+  line-height: 1.5 !important;
+  border-radius: 0.375rem !important;
+  -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !important;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !important;
+}
+
+.btn-primary:hover {
+  color: #ffdb67 !important;
+  background-color: black !important;
+}
+
+.activeBorder {
+  border-left: black solid 2px;
+}
+
+.activeText {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
 
 
