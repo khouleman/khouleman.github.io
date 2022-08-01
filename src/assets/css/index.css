@@ -453,10 +453,6 @@ a {
 
 }
 
-.tools div:first-child {
-  margin-left: 0;
-}
-
 .tools div span {
   display: block;
   z-index: -1;
@@ -489,7 +485,7 @@ figure:hover + span {
 .tools-hover div {
   width: 160px;
   padding: 0 5px 100px 0;
-  margin: 0 5px;
+  margin: 0;
 }
 
 .tools-hover figure:hover img {
@@ -615,6 +611,10 @@ input:-webkit-autofill:active {
 
   .title-name {
     font-size: 2.5rem;
+  }
+
+  .contact {
+    margin-bottom: 2rem;
   }
 }
 
