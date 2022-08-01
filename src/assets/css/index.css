@@ -28,7 +28,7 @@ body {
   padding: 1rem 0;
   background-color: #ffdb67;
   z-index: 1030;
-  /*border-bottom: 1px solid black;*/
+  border-bottom: 1px solid black;
 }
 
 .header-brand {
@@ -119,8 +119,8 @@ a {
 
 .title-name {
   position: relative;
-  font-size: 8rem !important;
-  font-weight: 800 !important;
+  font-size: 8rem;
+  font-weight: 800;
   line-height: 1;
   padding-bottom: 1.75rem;
   margin-bottom: 2rem;
@@ -453,12 +453,6 @@ a {
 
 }
 
-.tools::after {
-  content: '';
-  clear: both;
-  display: block;
-}
-
 .tools div:first-child {
   margin-left: 0;
 }
@@ -529,7 +523,7 @@ figure:hover + span {
 }
 
 .projects-content {
-  padding: 1rem 1rem;
+  padding: 1rem 0;
   background: #ffdb67;
 }
 
@@ -597,4 +591,51 @@ input:-webkit-autofill:active {
   color: rgba(0, 0, 0, 0.5) !important;
 }
 
+.presentation {
+  padding-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .tools-hover div {
+    width: 120px;
+    margin: 0;
+    padding: 0 5px 50px 0;
+
+  }
+
+  .tools {
+    justify-content: space-between;
+    align-items: unset;
+  }
+
+  .card {
+    background-color: unset !important;
+  }
+
+  .card-img-top {
+    opacity: 1 !important;
+  }
+
+  .section-title {
+    margin-bottom: 2rem !important;
+  }
+
+  .presentation {
+    padding-top: 1rem;
+  }
+
+  .text-subject {
+    font-size: 1.8rem;
+  }
+
+  .subtitle-subject {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .title-name {
+    font-size: 2.8rem;
+  }
+}
 
