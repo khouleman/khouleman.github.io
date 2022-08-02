@@ -675,5 +675,15 @@ input:-webkit-autofill:active {
     .tools-hover div {
       height: 240px;
     }
+
+    .img-tools {
+      max-width: 100%;
+      height: auto;
+    }
+
+    figure {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
