@@ -1037,6 +1037,10 @@ ServerSignature Off
 #     Header merge Cache-Control "no-transform"
 # </IfModule>
 
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
 # ----------------------------------------------------------------------
 # | ETags                                                              |
 # ----------------------------------------------------------------------
